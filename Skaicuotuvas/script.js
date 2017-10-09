@@ -7,18 +7,28 @@ function calc() {
 
 	var arg1 = parseInt(input_arg1.value) || 0;
 	var arg2 = parseInt(input_arg2.value) || 0;
+	var result;
 
 	if(input_operation.value == "add") {
-		div_result.innerHTML = arg1 + arg2;
+		result = arg1 + arg2;
 	} else if (input_operation.value == "sub") {
-		div_result.innerHTML = arg1 - arg2;
+		result = arg1 - arg2;
 	} else if (input_operation.value == "multi") {
-		div_result.innerHTML = arg1 * arg2;
+		result = arg1 * arg2;
 	} else if (input_operation.value == "div") {
-		div_result.innerHTML = arg1 / arg2;
+		result = arg1 / arg2;
 	}
 
-	//console.log(sum);
+	if (result < 0){
+		div_result.style.color = "red";	
+	} else {
+		div_result.style.color = "green";
+	}
+
+	div_result.innerHTML = result;
 
 }
+
+
+	//console.log(sum);
 
