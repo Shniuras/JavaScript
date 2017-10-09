@@ -9,7 +9,6 @@ function calc() {
 	var arg2 = parseInt(input_arg2.value) /10 * 2;
 	var arg3 = parseInt(input_arg3.value);
 	var result;
-	var text;
 
 	result = arg1 + arg2;
 
@@ -20,4 +19,22 @@ function calc() {
 	}
 
 	div_result.innerHTML = result;
+}
+
+var table = document.getElementById("table");
+
+function addTable() {
+
+	var tr = table.InsertRow(0);
+
+	var td0 = tr.InsertCell(0);
+	var td1 = tr.InsertCell(1);
+	var td2 = tr.InsertCell(2);
+	var td3 = tr.InsertCell(3);
+
+	td0.innerHTML = document.getElementById("arg1").value;
+	td1.innerHTML = document.getElementById("arg2").value;
+	td2.innerHTML = document.getElementById("arg3").value;
+	td3.innerHTML = document.getElementById("result").value;
+
 }

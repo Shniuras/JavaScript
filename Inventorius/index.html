@@ -7,38 +7,38 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <title>Calculator</title>
   </head>
   <body>
-    <div class="container">
-	    <h1>Calculator</h1>
+  	<div class="container-fluid">
 	    <div class="row">
-	    	<div class="col">
-          <label>Ratlankiu plotis "</label>
-	    		<input onkeyup="calc()" class="form-control" type="text" id="arg1">
-          <label>Ratu plotis (mm)</label>
-	    		<input onkeyup="calc()" class="form-control" type="text" id="arg2">
-          <label>Arkos plotis (cm)</label>
-          <input onkeyup="calc()" class="form-control" type="text" id="arg3">
-          <button class="btn btn-primary" onclick="addTable()">Enter</button>
- 			  </div>  
-        <div class="col" id="result">
-        </div> 
-        </div>	
-        <div class="row">
-        <table class="table table-sm">
-          <thead>
-            <tr>
-              <th>Ratlankiu plotis "</th>
-              <th>Ratu Plotis (mm)</th>
-              <th>Arkos plotis (cm)</th>
-              <th>Suma</th>
-            </tr>
-          </thead>
-          <tbody id="table">
-          </tbody>
-        </table>
-        </div>
+	    	<div class="col-8">
+	    		<table class="table table-hover">
+				  <thead>
+				    <tr>
+				      <th>Product ID</th>
+				      <th>Product Name</th>
+				      <th>Product Quantity</th>
+				      <th>Product Price</th>
+				      <th>Date</th>
+				    </tr>
+				  </thead>
+				  <tbody id="table">
+				  </tbody>
+				</table>
+	    	</div>
+	    	<div class="col text-center">
+	    		<label><strong>Enter Information Here</strong></label>
+	    		<input class="form-control" type="text" id="arg0" placeholder="Product ID">
+	    		<br>
+	    		<input class="form-control" type="text" id="arg1" placeholder="Product Name">
+	    		<br>
+	    		<input class="form-control" type="text" id="arg2" placeholder="Product Quantity">
+	    		<br>
+	    		<input class="form-control" type="text" id="arg3" placeholder="Product Price">
+	    		<br>
+	    		<button class="btn btn-dark" onclick="addTable()">Enter</button>
+	    	</div>
+	    </div>
     </div>
 
     <!-- Optional JavaScript -->
