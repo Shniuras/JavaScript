@@ -47,6 +47,12 @@ cb_vg.addEventListener("change", function(){
 		for(var i=0; i < salotu_sarasas.length; i++){
 			if(salotu_sarasas[i].getAttribute("veg") == "false") {
 				salotu_sarasas[i].style.display = "none";
+			} else {
+				var selected = false;
+				if(!selected) {
+					salotu_sarasas[i].setAttribute("selected", "true");
+					selected = true;
+				}
 			}
 		}
 	} else {
