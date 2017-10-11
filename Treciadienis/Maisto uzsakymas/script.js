@@ -69,7 +69,7 @@ halal.addEventListener("change", function(){
 		for(var i=0; i < antru_sarasas.length; i++){
 			if(antru_sarasas[i].getAttribute("type") == "halal") {
 				antru_sarasas[i].style.display = "block";
-			}
+			}  
 		}
 	} else {
 		for(var i=0; i < antru_sarasas.length; i++){
