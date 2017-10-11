@@ -3,6 +3,7 @@ var sriuba = document.getElementById('sriubos');
 var div_sriubos = document.getElementById('div_sriubos');
 var salotos = document.getElementById('salotos');
 var div_salotos = document.getElementById('div_salotos');
+var halal = document.getElementById('halal');
 
 
 sriuba.addEventListener("change", function(){
@@ -58,6 +59,74 @@ cb_vg.addEventListener("change", function(){
 	} else {
 		for(var i=0; i < salotu_sarasas.length; i++){
 			salotu_sarasas[i].style.display = "block";
+		}
+	}
+});
+halal.addEventListener("change", function(){
+	var antru_sarasas = document.getElementById('antru_sarasas').options;
+	
+	if(halal.checked) {
+		for(var i=0; i < antru_sarasas.length; i++){
+			if(antru_sarasas[i].getAttribute("type") == "halal") {
+				antru_sarasas[i].style.display = "block";
+			}
+		}
+	} else {
+		for(var i=0; i < antru_sarasas.length; i++){
+			if(antru_sarasas[i].getAttribute("type") == "halal") {
+				antru_sarasas[i].style.display = "none";
+			}
+		}
+	}
+});
+wheat.addEventListener("change", function(){
+	var antru_sarasas = document.getElementById('antru_sarasas').options;
+	
+	if(wheat.checked) {
+		for(var i=0; i < antru_sarasas.length; i++){
+			if(antru_sarasas[i].getAttribute("type") == "wheat") {
+				antru_sarasas[i].style.display = "block";
+			}
+		}
+	} else {
+		for(var i=0; i < antru_sarasas.length; i++){
+			if(antru_sarasas[i].getAttribute("type") == "wheat") {
+				antru_sarasas[i].style.display = "none";
+			}
+		}
+	}
+});
+gluten.addEventListener("change", function(){
+	var antru_sarasas = document.getElementById('antru_sarasas').options;
+	
+	if(gluten.checked) {
+		for(var i=0; i < antru_sarasas.length; i++){
+			if(antru_sarasas[i].getAttribute("type") == "gluten") {
+				antru_sarasas[i].style.display = "block";
+			}
+		}
+	} else {
+		for(var i=0; i < antru_sarasas.length; i++){
+			if(antru_sarasas[i].getAttribute("type") == "gluten") {
+				antru_sarasas[i].style.display = "none";
+			}
+		}
+	}
+});
+kosher.addEventListener("change", function(){
+	var antru_sarasas = document.getElementById('antru_sarasas').options;
+	
+	if(kosher.checked) {
+		for(var i=0; i < antru_sarasas.length; i++){
+			if(antru_sarasas[i].getAttribute("type") == "kosher") {
+				antru_sarasas[i].style.display = "block";
+			}
+		}
+	} else {
+		for(var i=0; i < antru_sarasas.length; i++){
+			if(antru_sarasas[i].getAttribute("type") == "kosher") {
+				antru_sarasas[i].style.display = "none";
+			}
 		}
 	}
 });
