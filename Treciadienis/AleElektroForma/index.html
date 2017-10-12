@@ -15,8 +15,8 @@
     	<div class="row ml-3">
     		<div class="col">
     			<div class="row">
-    				<button type="button" class="btn btn-outline-secondary mr-1 a" id="mpfa">PERKA FIZINIS ASMUOS </button>
-    				<button type="button" class="btn btn-outline-secondary a" id="mpi">PERKA IMONE</button>
+    				<button type="button" class="btn btn-light mr-1" id="mpfa">PERKA FIZINIS ASMUOS </button>
+    				<button type="button" class="btn btn-light" id="mpi">PERKA IMONE</button>
     			</div>	
     		</div>
     	</div>
@@ -25,8 +25,20 @@
 	    		<div>Vardas<input class="form-control" name="vardas"></div>
 	    		<div>Pavarde<input class="form-control" name="pavarde"></div>
 	    	</div>
+	    	<div id="juridinis_asmuo">
+		    	<div class="row mt-1 ml-3">
+		    		<div>Imones Pavadinimas<input class="form-control" name="imones_pavadinimas"></div>
+		    	</div>
+		    	<div class="row mt-1 ml-3">
+		    		<div>Imones kodas<input class="form-control" name="imones_kodas" id="imkod"></div>
+		    		<div>Pakartokik Imones koda<input class="form-control" name="kart_imones_kodas" id="pimkod" onkeyup="addTodo(); return false;"></div>
+		    	</div>
+		    	<div class="row mt-1 ml-3">
+		    		<div>PVM kodas<input class="form-control" name="adresas"></div>
+		    	</div>
+	    	</div>
 	    	<div class="row mt-1 ml-3">
-	    		<div>El. pasto adresas<input class="form-control" name="el_pastas"></div>
+	    		<div>El. pasto adresas<input class="form-control" name="el_pastas" id="email" onkeyup="checkEmail();"></div>
 	    		<div>Adresas<input class="form-control" name="adresas"></div>
 	    	</div>
 	    	<div class="row mt-1 ml-3">
@@ -54,47 +66,8 @@
 	    	<div class="row mt-1 ml-3">
 	    		<div>Telefonas<input class="form-control" name="telefonas"></div>
 	    	</div>
-    	</div>
-    	<div class="imone" id="juridinis_asmuo">
 	    	<div class="row mt-1 ml-3">
-	    		<div>Vardas<input class="form-control" name="vardas"></div>
-	    		<div>Pavarde<input class="form-control" name="pavarde"></div>
-	    	</div>
-	    	<div class="row mt-1 ml-3">
-	    		<div>Imones Pavadinimas<input class="form-control" name="imones_pavadinimas"></div>
-	    	</div>
-	    	<div class="row mt-1 ml-3">
-	    		<div>Imones kodas<input class="form-control" name="el_pastas"></div>
-	    		<div>PVM kodas<input class="form-control" name="adresas"></div>
-	    	</div>
-	    	<div class="row mt-1 ml-3">
-	    		<div>El. pasto adresas<input class="form-control" name="el_pastas"></div>
-	    		<div>Adresas<input class="form-control" name="adresas"></div>
-	    	</div>
-	    	<div class="row mt-1 ml-3">
-	    		<div>Miestas<input class="form-control" name="miestas"></div>
-	    		<div>Rajonas 
-	    			<select class="form-control">
-	    				<option disabled selected value>Pasirinkite Rajona</option>
-	    				<option>Vilniaus apskritis</option>
-	    				<option>Kauno apskritis</option>
-	    				<option>Klaipedos apskritis</option>
-	    			</select>
-	    		</div>
-	    	</div>
-	    	<div class="row mt-1 ml-3">
-	    		<div>ZIP/Pasto kodas<input class="form-control" name="pasto_kodas"></div>
-	    		<div>Salis
-	    			<select class="form-control">
-	    				<option disabled selected value>Pasirinkite sali</option>
-	    				<option>Lietuva</option>
-	    				<option>Latvija</option>
-	    				<option>Baltarusija</option>
-	    			</select>
-	    		</div>
-	    	</div>
-	    	<div class="row mt-1 ml-3">
-	    		<div>Telefonas<input class="form-control" name="telefonas"></div>
+	    		<input class="btn btn-danger" type="submit" name="submit">
 	    	</div>
     	</div>
     </div>

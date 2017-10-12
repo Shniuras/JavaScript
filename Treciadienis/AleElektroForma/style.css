@@ -1,17 +1,11 @@
 .a {
 	color:black;
 }
-.a:active {
-	background-color: red;
-	color: white;
-	border: none;
-	outline: none;
-}
 
-.imone {
+#juridinis_asmuo {
 	display:none;
 }
 
-.fizinis {
-	display:none;
+.btn {
+	border: 0.5px solid lightgray;
 }
