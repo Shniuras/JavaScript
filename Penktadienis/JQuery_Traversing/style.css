@@ -1,0 +1,65 @@
+.pirmas {
+	background-color: #F0B67F;
+	border: solid 1px;
+	height: 100px;
+}
+
+.antras {
+	background-color: #FE5F55;
+	border: solid 1px;
+	height: 100px;
+}
+
+.trecias {
+	background-color: #EEF5DB;
+	border: solid 1px;
+	height: 100px;
+}
+
+.ketvirtas {
+	background-color: #A5D0A8;
+	border: solid 1px;
+	height: 100px;
+}
+
+.box {
+	background-color: #A5D0A8;
+	height: 50px;
+	width: 50px;
+	border: 1px solid;
+}
+
+.box {
+	background-color: #A5D0A8;
+	height: 50px;
+	width: 50px;
+	border: 1px solid;
+}
+
+.box2 {
+	background-color: #EEF5DB;
+	height: 50px;
+	width: 50px;
+	border: 1px solid;
+}
+
+.box3{
+	background-color: #F0B67F;
+	height: 75px;
+	width: 75px;
+	border: 1px solid;
+}
+
+.box31{
+	background-color: #000000;
+	height: 20px;
+	width: 20px;
+	border: 1px solid;
+}
+
+.box4{
+	background-color: #FE5F55;
+	height: 75px;
+	width: 75px;
+	border: 1px solid;
+}
